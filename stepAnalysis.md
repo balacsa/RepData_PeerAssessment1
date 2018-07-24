@@ -68,6 +68,7 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
     abline(v=mean(numberOfSteps$Total), col="blue", lwd=2)
 
 ```
+![plot of picture1](figure/picture1.png) 
 
 ##What is the average daily activity pattern?
 ```{r }
@@ -75,6 +76,7 @@ The dataset is stored in a comma-separated-value (CSV) file and there are a tota
     names(intervalAvg) <- c("Interval","Average")
     plot(intervalAvg, type = "l", main="Average Number of Steps per Interval", ylab="Average Number of Steps")
 ```
+![plot of picture2](figure/picture2.png) 
 
 ###Which 5-minute interval, on average across all the days in the dataset, contains the maximum number of steps?
 
@@ -112,6 +114,8 @@ I am going to replace the NA with the internal average what have calclated befor
     plot(numberOfStepsNoNA, type = "h", lwd = 5, lend = "square", main = "NAs filled")
 
 ```
+![plot of picture3](figure/picture3.png) 
+
 Calculate the mean and average
 ```{r }
 head(aggregate(steps ~ date, data = activityData, FUN = mean),10)
