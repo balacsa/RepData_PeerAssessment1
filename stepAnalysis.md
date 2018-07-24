@@ -28,7 +28,7 @@ The variables included in this dataset are:
 
 The dataset is stored in a comma-separated-value (CSV) file and there are a total of 17,568 observations in this dataset.
 
-##Loading the data
+## Loading the data
 
 ```{r }
     workDir  <- 'C:/CourseraDataScientistCourse/05_Reproducible Research/week2/repdata_data_activity'
